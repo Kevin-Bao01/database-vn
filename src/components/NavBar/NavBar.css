@@ -1,0 +1,160 @@
+.navbar-container{
+  position: sticky;
+  background-color: purple;
+  top: 0;
+  z-index:998;
+  transition: 0.4s;
+  transform: translateY(0);
+}
+
+.navbar-wrapper{
+  list-style-type: none;
+  color: white;
+  margin: 0 0.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-container a{
+  text-decoration: none;
+}
+
+.nav-bar-wrapper{
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-link{
+  color: white;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.navbar-link.active{
+  background-color: white;
+  color: black;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+
+.logo{
+  font-family: 'Cookie', cursive;
+  color:white;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.navbar-container.hide{
+  transform: translateY(-100%);
+}
+
+.navbar-item .right-side-link{
+  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.right-side-link.log-out-link{
+  cursor: pointer;
+}
+
+.account-detail{
+  background-color: rgb(92, 6, 85);
+  border-radius:80px;
+  padding: 0.3rem 0.4rem;
+  position: relative;
+}
+
+.right-side-link img{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.right-side-link i{
+  font-size: 0.7rem;
+}
+
+.drop-down-container{
+  position: absolute;
+  top: 100%;
+  background-color: rgb(66, 6, 66);
+  right: 10%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.drop-down-container div{
+  white-space: nowrap;
+  padding: 0.3rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.345);
+  text-decoration: none;
+  color:white
+}
+
+.drop-down-container div:hover,
+.drop-down-container .link-account-setting:hover{
+  background-color: rgb(177, 2, 177);
+}
+
+.drop-down-container .link-account-setting{
+  white-space: nowrap;
+  padding: 0.3rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.345);
+  text-decoration: none;
+  color:white;
+  display:flex;
+  align-items:center
+}
+
+.navbar-small-mobile-container{
+  position: relative;
+  margin-left: 1rem;
+}
+
+.navbar-small-mobile-wrapper{
+  position: absolute;
+  top: 150%;
+  left: -170px;
+  border-radius: 10px;
+  background-color: rgb(94, 12, 83);
+}
+
+.navbar-small-mobile-wrapper a{
+  padding-bottom: 0.3rem;
+  padding: 0.5rem 1rem;
+  margin: 0!important;
+  border-bottom: 1px solid pink;
+}
+
+.navbar-small-mobile-wrapper a:active{
+  background-color: rgb(226, 1, 226);
+}
+
+.dark-mode-container{
+  margin-right: 0.2rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+@media (max-width:361px) {
+  .logo{
+    font-size: 1.8rem;
+  }
+}

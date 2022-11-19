@@ -1,0 +1,10 @@
+.app-container.dark-mode .admin-container{
+  color:white;
+  overflow: auto;
+  width: 100%;
+}
+
+.admin-container th,
+.admin-container td{
+  padding: 0.2rem 1rem
+}
